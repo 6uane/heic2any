@@ -1,0 +1,45 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\duane\\RiderProjects\\h2a\\src\\h2a.GUI\\obj\\Debug\\net8.0-android\\scopedcss\\bundle\\h2a.GUI.styles.css",
+      "PackagePath": "staticwebassets\\h2a.GUI.styles.css"
+    },
+    {
+      "Id": "C:\\Users\\duane\\RiderProjects\\h2a\\src\\h2a.GUI\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\duane\\RiderProjects\\h2a\\src\\h2a.GUI\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\duane\\RiderProjects\\h2a\\src\\h2a.GUI\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\duane\\RiderProjects\\h2a\\src\\h2a.GUI\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\duane\\RiderProjects\\h2a\\src\\h2a.GUI\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-android\\staticwebassets\\msbuild.build.h2a.GUI.props",
+      "PackagePath": "build\\h2a.GUI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-android\\staticwebassets\\msbuild.buildMultiTargeting.h2a.GUI.props",
+      "PackagePath": "buildMultiTargeting\\h2a.GUI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-android\\staticwebassets\\msbuild.buildTransitive.h2a.GUI.props",
+      "PackagePath": "buildTransitive\\h2a.GUI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-android\\staticwebassets\\msbuild.h2a.GUI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

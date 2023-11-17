@@ -1,0 +1,1 @@
+C:\Users\duane\RiderProjects\h2a\src\h2a.GUI\h2a.GUI.csproj;x64

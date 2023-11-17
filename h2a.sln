@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "h2a.GUI", "src\h2a.GUI\h2a.GUI.csproj", "{DE51DF5E-4C09-4077-8722-98920202ECCF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "h2a.Core", "src\h2a.Core\h2a.Core.csproj", "{61D6DC87-AC81-42D7-96C8-440CEB97D7C7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{75605899-2E1C-4F7B-9731-AE70CBE47406}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{C1726520-FE2B-4199-98FA-91458AF337F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "h2a.UnitTests", "tests\h2a.UnitTests\h2a.UnitTests.csproj", "{E82849D8-E147-4FDA-B87E-F70AB2A2EE37}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DE51DF5E-4C09-4077-8722-98920202ECCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE51DF5E-4C09-4077-8722-98920202ECCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE51DF5E-4C09-4077-8722-98920202ECCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE51DF5E-4C09-4077-8722-98920202ECCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61D6DC87-AC81-42D7-96C8-440CEB97D7C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61D6DC87-AC81-42D7-96C8-440CEB97D7C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61D6DC87-AC81-42D7-96C8-440CEB97D7C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61D6DC87-AC81-42D7-96C8-440CEB97D7C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E82849D8-E147-4FDA-B87E-F70AB2A2EE37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E82849D8-E147-4FDA-B87E-F70AB2A2EE37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E82849D8-E147-4FDA-B87E-F70AB2A2EE37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E82849D8-E147-4FDA-B87E-F70AB2A2EE37}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{61D6DC87-AC81-42D7-96C8-440CEB97D7C7} = {75605899-2E1C-4F7B-9731-AE70CBE47406}
+		{DE51DF5E-4C09-4077-8722-98920202ECCF} = {75605899-2E1C-4F7B-9731-AE70CBE47406}
+		{E82849D8-E147-4FDA-B87E-F70AB2A2EE37} = {C1726520-FE2B-4199-98FA-91458AF337F8}
+	EndGlobalSection
+EndGlobal
