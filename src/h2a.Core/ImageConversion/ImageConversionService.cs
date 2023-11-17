@@ -1,10 +1,12 @@
-﻿using ImageMagick;
+﻿using h2a.Core.ImageConversion.Settings;
+using h2a.Core.Interfaces;
+using ImageMagick;
 
-namespace h2a.Core.Services;
+namespace h2a.Core.ImageConversion;
 
-public class ImageConversionService
+public class ImageConversionService : IImageConversionService
 {
-    private const string HeicExtension = ".heic";
+    public const string HeicExtension = ".heic";
 
     public async Task ConvertHeicFilesInFolder(ImageConversionSettings settings) =>
         await Task.WhenAll(
