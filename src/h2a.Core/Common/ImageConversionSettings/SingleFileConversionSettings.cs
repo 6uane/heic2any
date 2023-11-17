@@ -1,3 +1,3 @@
 ﻿namespace h2a.Core.Common.ImageConversionSettings;
 
-public record FileConversionSettings();
+public record SingleFileConversionSettings();
