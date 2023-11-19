@@ -2,7 +2,7 @@
 @using CommunityToolkit.Maui.Storage
 
 <div
-        class="
+    class="
           flex flex-col
           p-20
           gap-8
@@ -11,48 +11,44 @@
           justify-between
           items-center
           h-[600px]
-        "
-      >
-        <div class="flex flex-col gap-8 w-full">
-          <div class="flex flex-col">
+        ">
+    <div class="flex flex-col gap-8 w-full">
+        <div class="flex flex-col">
             <div class="text-center text-2xl">Quality</div>
             <div class="w-full">
-              <div class="flex justify-between">
-                <p>0%</p>
-                <p>100%</p>
-              </div>
-              <input
-                type="range"
-                min="1"
-                max="100"
-                value="50"
-                class="slider w-full"
-                id="myRange"
-              />
+                <div class="flex justify-between">
+                    <p>0%</p>
+                    <p>100%</p>
+                </div>
+                <input
+                    type="range"
+                    min="1"
+                    max="100"
+                    value="50"
+                    class="slider w-full"
+                    id="myRange"/>
             </div>
-          </div>
-          <div class="flex flex-col items-center gap-4">
+        </div>
+        <div class="flex flex-col items-center gap-4">
             <div class="text-center text-2xl">Change Size</div>
             <div class="flex gap-4">
-              <div class="flex">
-                <input
-                  class="w-32 p-2 rounded-xl bg-gray-300"
-                  placeholder="1-10000"
-                />
-                <p class="bg-gray-600 rounded-xl p-2 -ml-4 text-white">PX</p>
-              </div>
-              <div class="flex">
-                <input
-                  class="w-32 p-2 rounded-xl bg-gray-300"
-                  placeholder="1-10000"
-                />
-                <p class="bg-gray-600 rounded-xl p-2 -ml-4 text-white">PX</p>
-              </div>
+                <div class="flex">
+                    <input
+                        class="w-32 p-2 rounded-xl bg-gray-300"
+                        placeholder="1-10000"/>
+                    <p class="bg-gray-600 rounded-xl p-2 -ml-4 text-white">PX</p>
+                </div>
+                <div class="flex">
+                    <input
+                        class="w-32 p-2 rounded-xl bg-gray-300"
+                        placeholder="1-10000"/>
+                    <p class="bg-gray-600 rounded-xl p-2 -ml-4 text-white">PX</p>
+                </div>
             </div>
-          </div>
         </div>
-        <button class="rounded-xl bg-gray-200 w-48 p-1 text-2xl">Submit</button>
-      </div>
+    </div>
+    <button class="rounded-xl bg-gray-200 w-48 p-1 text-2xl">Submit</button>
+</div>
 
 @code{
     private string _selectedInput { get; set; }
@@ -62,7 +58,7 @@
         var result = await FolderPicker.Default.PickAsync();
         if (!result.IsSuccessful)
             return;
-            
+
         _selectedInput = result.Folder.Path;
         StateHasChanged();
     }

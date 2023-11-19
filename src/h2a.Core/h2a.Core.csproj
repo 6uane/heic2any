@@ -15,14 +15,12 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Magick.NET-Q16-x64" Version="13.4.0" />
+        <PackageReference Include="Magick.NET-Q16-x64" Version="13.4.0"/>
         <PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)"/>
         <PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)"/>
 
 
-
     </ItemGroup>
-
 
 
 
