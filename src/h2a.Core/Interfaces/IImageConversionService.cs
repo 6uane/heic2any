@@ -1,10 +1,9 @@
-﻿using h2a.Core.Common.ConversionSettings;
-using ImageMagick;
+﻿using h2a.Core.Common.Settings;
 
 namespace h2a.Core.Interfaces;
 
 public interface IImageConversionService
 {
-    Task ConvertHeicFilesInFolder(ConversionSettings settings);
-    Task ConvertHeicFile(string filePath, MagickFormat desiredFormat);
+    Task ConvertImageFilesInFolder(FolderConversionSettings settings);
+    Task ConvertImageFile(string imageFilePath, IConversionSettings settings);
 }

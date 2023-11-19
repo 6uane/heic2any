@@ -1,4 +1,4 @@
-using h2a.Core.Common.ConversionSettings;
+using h2a.Core.Common.Settings;
 using h2a.Core.Interfaces;
 using h2a.Core.Services;
 using ImageMagick;
@@ -14,14 +14,15 @@ namespace h2a.UnitTests
         [Test]
         public async Task ConvertDirectoryFiles()
         {
-            var service = new ImageConversionService();
-            var settings = new ConversionSettings(
+            IImageConversionService service = new ImageConversionService();
+            var settings = new FolderConversionSettings(
                 _testDirectoryPath,
                 MagickFormat.Heic,
-                MagickFormat.Jpeg
+                MagickFormat.Jpeg,
+                100
             );
 
-            await service.ConvertHeicFilesInFolder(settings);
+            await service.ConvertImageFilesInFolder(settings);
         }
     }
 }
