@@ -1,0 +1,41 @@
+﻿@using CommunityToolkit.Maui.Storage
+
+<button class="text-white hover:brightness-105 py-3 px-6 rounded-lg bg-stoney/90 drop-shadow-lg"
+    @onclick="PickFolder">
+    Select Folder
+</button>
+
+<button class="text-white hover:brightness-105 py-3 px-6 rounded-lg bg-stoney/90 drop-shadow-lg"
+        @onclick="PickFile">
+    Select File
+</button>
+
+@code {
+
+
+    private async Task PickFolder()
+    {
+        var result = await FolderPicker.Default.PickAsync();
+        
+        if (!result.IsSuccessful)
+            return;
+
+
+    }
+
+    private async Task PickFile()
+    {
+        var result = await FilePicker.Default.PickMultipleAsync(new PickOptions
+        {
+            PickerTitle = "Select a file",
+            FileTypes = new FilePickerFileType(new Dictionary<DevicePlatform, IEnumerable<string>>
+            {
+                { DevicePlatform.WinUI, new[] { ".heic" } }
+            })
+        });
+
+        if (!result.Any())
+            return;
+
+    }
+}
