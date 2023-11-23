@@ -15,12 +15,5 @@ public class ImageProcessor : IImageProcessor
 
     public MagickImage GetPreviewImageClone() => (MagickImage)_preview.Clone();
 
-    public void Resize(int width, int height)
-    {
-        // Resize doesn't fill the box just fit it
-        IMagickGeometry geometry = new MagickGeometry(width, height);
-        geometry.IgnoreAspectRatio = true;
-        geometry.FillArea = true;
-        _preview.Resize(geometry);
-    }
+    public void Resize(IMagickGeometry geometry) => _preview.Resize(geometry);
 }

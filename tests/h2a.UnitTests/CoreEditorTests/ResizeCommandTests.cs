@@ -34,7 +34,10 @@ public class ResizeCommandTests
 
         const int width = 400;
         const int height = 300;
-        var command = new ResizeCommand(width, height, imageProcessor);
+        var command = new ResizeCommand(
+            new MagickGeometry(width, height) { FillArea = true, IgnoreAspectRatio = true },
+            imageProcessor
+        );
 
         // Act
         command.Execute();
@@ -55,7 +58,10 @@ public class ResizeCommandTests
 
         const int width = 200;
         const int height = 150;
-        var command = new ResizeCommand(width, height, imageProcessor);
+        var command = new ResizeCommand(
+            new MagickGeometry(width, height) { FillArea = true, IgnoreAspectRatio = true },
+            imageProcessor
+        );
 
         // Act
         command.Execute();
@@ -77,7 +83,10 @@ public class ResizeCommandTests
 
         const int width = 200;
         const int height = 150;
-        var command = new ResizeCommand(width, height, imageProcessor);
+        var command = new ResizeCommand(
+            new MagickGeometry(width, height) { FillArea = true, IgnoreAspectRatio = true },
+            imageProcessor
+        );
 
         // Act
         command.Execute();
