@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>h2a.Core.LivePreview</RootNamespace>
+    </PropertyGroup>
+
+
+    <ItemGroup>
+      <PackageReference Include="Magick.NET-Q16-x64" Version="13.4.0" />
+    </ItemGroup>
+
+
+
+
+
+
+
+</Project>

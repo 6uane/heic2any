@@ -19,11 +19,27 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\..\src\h2a.Core.Editor\h2a.Core.Editor.csproj" />
       <ProjectReference Include="..\..\src\h2a.Core\h2a.Core.csproj" />
     </ItemGroup>
 
     <ItemGroup>
       <Folder Include="TestData\HEICFiles\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Update="TestData\HEICFiles\sample1.heic">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="TestData\HEICFiles\sample2.heic">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="TestData\HEICFiles\sample3.HEIC">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="TestData\HEICFiles\sample4.heic">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
     </ItemGroup>
 
 </Project>
