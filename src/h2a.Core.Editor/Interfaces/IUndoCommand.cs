@@ -1,6 +1,6 @@
 ﻿namespace h2a.Core.LivePreview.Interfaces;
 
-public interface IUndoCommand
+public interface IUndoCommand : ICommand
 {
     void Undo();
     void Redo();

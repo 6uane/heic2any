@@ -1,4 +1,5 @@
 ﻿using CommunityToolkit.Maui;
+using h2a.Core.LivePreview;
 using Microsoft.Extensions.Logging;
 
 namespace h2a.GUI;
@@ -11,6 +12,7 @@ public static class MauiProgram
         builder.UseMauiApp<App>().UseMauiCommunityToolkit();
 
         builder.Services.AddMauiBlazorWebView();
+        builder.Services.AddEditor();
 
 #if DEBUG
         builder.Services.AddBlazorWebViewDeveloperTools();

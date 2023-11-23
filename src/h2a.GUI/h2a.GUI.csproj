@@ -71,4 +71,9 @@
         <MauiCss Include="Components\Layout\MainLayout.razor.css" />
     </ItemGroup>
 
+
+    <ItemGroup>
+      <ProjectReference Include="..\h2a.Core.Editor\h2a.Core.Editor.csproj" />
+    </ItemGroup>
+
 </Project>

@@ -2,7 +2,7 @@
 
 namespace h2a.Core.LivePreview.Invokers;
 
-public class ProcessingCommandInvoker : ICommandInvoker
+public class CommandInvoker : ICommandInvoker
 {
     private readonly Stack<IUndoCommand> _undoStack = new Stack<IUndoCommand>();
     private readonly Stack<IUndoCommand> _redoStack = new Stack<IUndoCommand>();

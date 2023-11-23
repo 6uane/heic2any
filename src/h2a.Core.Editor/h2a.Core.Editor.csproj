@@ -10,6 +10,11 @@
 
     <ItemGroup>
       <PackageReference Include="Magick.NET-Q16-x64" Version="13.4.0" />
+      <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.0" />
+
+
+
+
     </ItemGroup>
 
 
