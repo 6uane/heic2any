@@ -8,11 +8,11 @@ public class ImageConversionService : IImageConversionService
 {
     public async Task ConvertImageFilesInFolder(FolderConversionSettings settings) =>
         await Task.WhenAll(
-            Directory
-                .EnumerateFiles(settings.FolderPath, $"*.{settings.SourceFormat:G}")
-                .Select(
-                    selector: async imageFilePath => await ConvertImageFile(imageFilePath, settings)
-                )
+        Directory
+            .EnumerateFiles(settings.FolderPath, $"*.{settings.SourceFormat:G}")
+            .Select(
+            selector: async imageFilePath => await ConvertImageFile(imageFilePath, settings)
+            )
         );
 
     public async Task ConvertImageFile(string imageFilePath, IConversionSettings settings)
@@ -21,11 +21,11 @@ public class ImageConversionService : IImageConversionService
         (image.Format, image.Quality) = (settings.TargetFormat, settings.Quality);
 
         await image.WriteAsync(
-            imageFilePath.Replace(
-                $".{settings.SourceFormat:G}",
-                $"_converted.{settings.TargetFormat:G}",
-                StringComparison.OrdinalIgnoreCase
-            )
+        imageFilePath.Replace(
+        $".{settings.SourceFormat:G}",
+        $"_converted.{settings.TargetFormat:G}",
+        StringComparison.OrdinalIgnoreCase
+        )
         );
 
         image.Dispose();

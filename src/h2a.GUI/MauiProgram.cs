@@ -1,5 +1,5 @@
 ﻿using CommunityToolkit.Maui;
-using h2a.Core.LivePreview;
+using h2a.Core.Editor;
 using Microsoft.Extensions.Logging;
 
 namespace h2a.GUI;

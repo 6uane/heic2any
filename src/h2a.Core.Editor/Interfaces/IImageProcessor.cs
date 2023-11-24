@@ -1,6 +1,6 @@
 ﻿using ImageMagick;
 
-namespace h2a.Core.LivePreview.Interfaces;
+namespace h2a.Core.Editor.Interfaces;
 
 public interface IImageProcessor
 {

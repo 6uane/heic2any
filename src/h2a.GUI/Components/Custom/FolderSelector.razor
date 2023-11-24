@@ -1,7 +1,6 @@
 ﻿@using CommunityToolkit.Maui.Storage
-
 <button class="text-white hover:brightness-105 py-3 px-6 rounded-lg bg-stoney/90 drop-shadow-lg"
-    @onclick="PickFolder">
+        @onclick="PickFolder">
     Select Folder
 </button>
 
@@ -16,7 +15,7 @@
     private async Task PickFolder()
     {
         var result = await FolderPicker.Default.PickAsync();
-        
+
         if (!result.IsSuccessful)
             return;
 

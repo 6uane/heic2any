@@ -1,10 +1,9 @@
-﻿using h2a.Core.LivePreview.Interfaces;
-using h2a.Core.LivePreview.Invokers;
-using h2a.Core.LivePreview.Receiver;
+﻿using h2a.Core.Editor.Interfaces;
+using h2a.Core.Editor.Invokers;
+using h2a.Core.Editor.Receiver;
 using Microsoft.Extensions.DependencyInjection;
-using System.Runtime.CompilerServices;
 
-namespace h2a.Core.LivePreview;
+namespace h2a.Core.Editor;
 
 public static class DependencyInjection
 {

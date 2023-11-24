@@ -1,0 +1,19 @@
+﻿@using ImageMagick
+
+<img src="@ImageData" alt="Image" />
+
+@code{
+
+    string ImageData { get; set; } = null!;
+    
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+        using var image = new MagickImage(@"C:\Users\duane\RiderProjects\h2a\tests\h2a.UnitTests\TestData\HEICFiles\sample1.heic");
+        image.Format = MagickFormat.Jpg;
+        var byteArray = image.ToByteArray();
+        ImageData = Convert.ToBase64String(byteArray);
+        ImageData = $"data:image/jpg;base64,{ImageData}";
+        
+    }
+}
